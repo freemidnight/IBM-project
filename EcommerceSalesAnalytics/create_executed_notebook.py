@@ -1,5 +1,5 @@
 """
-Generates and executes Free_EcommerceSalesAnalytics.ipynb with complete
+Generates and executes GirishArvind_EcommerceSalesAnalytics.ipynb with complete
 data cleaning, exploratory data analysis, visualizations, and model training.
 """
 
@@ -9,8 +9,8 @@ from nbclient import NotebookClient
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_CSV = os.path.join(BASE_DIR, "..", "archive", "ecommerce_sales_customer_analytics_150k.csv")
-NB_PATH  = os.path.join(BASE_DIR, "Free_EcommerceSalesAnalytics.ipynb")
-ROOT_NB_PATH = os.path.join(BASE_DIR, "..", "Free_EcommerceSalesAnalytics.ipynb")
+NB_PATH  = os.path.join(BASE_DIR, "GirishArvind_EcommerceSalesAnalytics.ipynb")
+ROOT_NB_PATH = os.path.join(BASE_DIR, "..", "GirishArvind_EcommerceSalesAnalytics.ipynb")
 
 nb = nbf.v4.new_notebook()
 cells = []
@@ -18,6 +18,8 @@ cells = []
 # Cell 1: Markdown Title
 cells.append(nbf.v4.new_markdown_cell("""# 🛒 E-Commerce Sales Analytics & Revenue Prediction
 ## End-to-End Machine Learning Pipeline: EDA, Feature Engineering & Regression Modeling
+**Author:** Girish Arvind  
+**Project:** IBM Project - E-Commerce Sales Analytics  
 
 **Project Overview:**
 This project utilizes the **E-Commerce Sales Customer Analytics (150K transactions)** dataset to perform comprehensive exploratory data analysis, uncover revenue trends across multiple sales channels and customer segments, and build high-precision regression models to forecast `net_sales` and evaluate profit margins.

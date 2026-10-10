@@ -1,5 +1,5 @@
 """
-Generates the comprehensive professional Word Project Report: Free_ProjectReport.docx
+Generates the comprehensive professional Word Project Report: GirishArvind_ProjectReport.docx
 Contains full documentation, methodology, data analysis, model performance tables,
 and embedded high-resolution figures from the /assets directory.
 """
@@ -16,8 +16,8 @@ from docx.oxml.ns import qn
 BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
 ASSETS_DIR = os.path.join(BASE_DIR, "assets")
 MODELS_DIR = os.path.join(BASE_DIR, "models")
-OUTPUT_DOC = os.path.join(BASE_DIR, "Free_ProjectReport.docx")
-ROOT_DOC   = os.path.join(BASE_DIR, "..", "Free_ProjectReport.docx")
+OUTPUT_DOC = os.path.join(BASE_DIR, "GirishArvind_ProjectReport.docx")
+ROOT_DOC   = os.path.join(BASE_DIR, "..", "GirishArvind_ProjectReport.docx")
 
 # Load stats & metrics if available
 stats_path = os.path.join(MODELS_DIR, "dataset_stats.json")
@@ -139,10 +139,11 @@ add_title("E-Commerce Sales Analytics & Revenue Prediction Platform")
 add_subtitle("End-to-End Machine Learning System, Predictive Modeling & Business Intelligence Report")
 
 # Metadata Box
-meta_table = doc.add_table(rows=5, cols=2)
+meta_table = doc.add_table(rows=6, cols=2)
 meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
 meta_data = [
     ("Project Title", "E-Commerce Sales Analytics & Revenue Prediction"),
+    ("Author", "Girish Arvind"),
     ("Dataset Source", "Kaggle E-Commerce Sales Customer Analytics (150K Transactions)"),
     ("Technologies", "Python 3.11, Scikit-Learn, Flask REST API, Streamlit Dashboard"),
     ("Core Machine Learning", "Random Forest Regressor & Gradient Boosting Regressor"),
@@ -346,9 +347,9 @@ add_bullet("Mobile App Channel Loyalty", "Mobile App users exhibit higher repeat
 # ═════════════════════════════════════════════════════════════════════════════
 add_h1("8. Project Deliverables Verification")
 add_p("The completed project satisfies all deliverables specified in the project mandate:")
-add_bullet("Executable Analysis Notebook", "Free_EcommerceSalesAnalytics.ipynb fully executed with visualizations and outputs.")
+add_bullet("Executable Analysis Notebook", "GirishArvind_EcommerceSalesAnalytics.ipynb fully executed with visualizations and outputs.")
 add_bullet("Requirements Specification", "requirements.txt containing all dependencies (pandas, scikit-learn, flask, streamlit, matplotlib, seaborn, python-docx).")
-add_bullet("Comprehensive Project Report", "Free_ProjectReport.docx containing full methodology, architecture, and embedded visuals.")
+add_bullet("Comprehensive Project Report", "GirishArvind_ProjectReport.docx containing full methodology, architecture, and embedded visuals.")
 add_bullet("Documentation & Guide", "README.md detailing project architecture, API specs, and reproduction steps.")
 
 doc.save(OUTPUT_DOC)

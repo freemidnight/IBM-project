@@ -27,8 +27,8 @@ EcommerceSalesAnalytics/
 ├── ui.py                            # Streamlit frontend (port 8501)
 ├── requirements.txt                 # Python dependencies
 ├── README.md                        # This file
-├── Free_EcommerceSalesAnalytics.ipynb  # Executed Jupyter notebook
-├── Free_ProjectReport.docx          # Word report with full documentation
+├── GirishArvind_EcommerceSalesAnalytics.ipynb  # Executed Jupyter notebook
+├── GirishArvind_ProjectReport.docx          # Word report with full documentation
 ├── models/
 │   ├── best_model.pkl               # Best trained model
 │   ├── rf_model.pkl                 # Random Forest model
@@ -123,5 +123,6 @@ curl -X POST http://localhost:5000/predict \
 ---
 
 ## Author
-Generated with Python · scikit-learn · Flask · Streamlit  
-Dataset: Kaggle E-Commerce Sales Analytics 150k
+**Girish Arvind**  
+IBM Project — E-Commerce Sales Analytics  
+Built with Python · scikit-learn · Flask · Streamlit · python-docx
