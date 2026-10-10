@@ -1,0 +1,45 @@
+{
+  "features": [
+    "quantity",
+    "gross_sales",
+    "discount_amount",
+    "tax_amount",
+    "shipping_cost",
+    "product_cost",
+    "delivery_days",
+    "estimated_delivery_days",
+    "customer_age",
+    "loyalty_points_earned",
+    "loyalty_points_redeemed",
+    "customer_order_count",
+    "discount_ratio",
+    "revenue_per_unit",
+    "is_delayed",
+    "year",
+    "month",
+    "dow",
+    "sales_channel",
+    "payment_method",
+    "shipping_method",
+    "customer_segment",
+    "region",
+    "order_status",
+    "return_status"
+  ],
+  "target": "net_sales",
+  "best_model": "Random Forest",
+  "rf_metrics": {
+    "model": "Random Forest",
+    "MAE": 6.43,
+    "RMSE": 26.38,
+    "R2": 0.9994,
+    "MAPE": 0.79
+  },
+  "gb_metrics": {
+    "model": "Gradient Boosting",
+    "MAE": 15.37,
+    "RMSE": 27.98,
+    "R2": 0.9993,
+    "MAPE": 1.88
+  }
+}
